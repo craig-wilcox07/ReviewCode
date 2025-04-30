@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .hometitle { /*this class shows the position the title card on the screen*/
+            border: 2px solid black;
+            position: sticky;
+            top: auto;
+            font-size: larger;/*these are the code for designing the page specifically to what i want*/
+            text-align: center;
+            padding: 5px;
+            background-color: #e28410;
+        }
+
+        ul { /*this is the class for the list of pages in my navigation bar*/
+            list-style-type: none;
+            margin: 80px;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: #e28410;
+            position:absolute;
+            left: 5%;
+            top: 6%;
+        }
+
+        li { /*this is the class for each individual page in the navigation bar whic allows me to manipulate them specifically*/
+            display: inline;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 98px;
+            font-size: 1.3vh;
+            font-size: 1.3vw;
+        }
+
+        .image {
+            position: absolute;
+            top: 20%;
+            left: 2%;
+        }
+
+        .information {
+            position: absolute;
+            right: 10%;
+            top: 20%;
+        }
+
+        .settings {
+            position: fixed;
+            bottom: 0%;
+            right: 0%;
+            border: 2px solid black;
+        }
+
+        .supportbutton {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            font-size: 1vh;
+            font-size: 1vw;
+            position: fixed;
+            bottom: 0%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        fetch('http://127.0.0.1:5000/Homepage')/*This was for checking if my pages were all linked together by getting the homepage and then going to html and css to get data then put it in the console*/
+            .then(response => response.json()) 
+            .then(data => console.log(data))
+            .catch (error => console.error('Error:', error));
+    </script>
+    <div class="hometitle"><a href="Homepage.html"><h1>Rolsa Technologies</h1></a></div>
+    <ul>
+        <li> <a href="login page.html">Login page</a></li>
+        <li> <a href="info.html">information page</a></li>
+        <li> <a href="booking.html">booking page</a></li>
+        <li> <a href="calculate.html">calculation page</a></li>
+    </ul>
+    <div class="image"><image src="renew.jpg" alt="this shows wind turbines in a hillside, showing an example of renewable energy to the user"></div> <!--this class shows an image and alt text for the user for accessibility terms-->
+    <div class="information">
+        <textarea rows="51" cols="75" readonly width="45px">Renewable energy is usually understood as energy harnessed from continuously occurring natural phenomena. 
+The International Energy Agency defines it as "energy derived from natural processes that are replenished at a faster rate than they are consumed". Solar power, wind power, hydroelectricity, geothermal energy, and biomass are widely agreed to be the main types of renewable energy.
+Renewable energy often displaces conventional fuels in four areas: electricity generation, hot water/space heating, transportation, and rural (off-grid) energy services.
+Although almost all forms of renewable energy cause much fewer carbon emissions than fossil fuels, the term is not synonymous with low-carbon energy. 
+Some non-renewable sources of energy, such as nuclear power,[contradictory]generate almost no emissions, while some renewable energy sources can be very carbon-intensive, such as the burning of biomass if it is not offset by planting new plants. 
+Renewable energy is also distinct from sustainable energy, a more abstract concept that seeks to group energy sources based on their overall permanent impact on future generations of humans. For example, biomass is often associated with unsustainable deforestation.
+Renewable energy (also called green energy) is energy made from renewable natural resources that are replenished on a human timescale. The most widely used renewable energy types are solar energy, wind power, and hydropower. 
+Bioenergy and geothermal power are also significant in some countries. Some also consider nuclear power a renewable power source, although this is controversial, as nuclear energy requires mining uranium, a nonrenewable resource. 
+Renewable energy installations can be large or small and are suited for both urban and rural areas. Renewable energy is often deployed together with further electrification. This has several benefits: electricity can move heat and vehicles efficiently and is clean at the point of consumption. 
+Variable renewable energy sources are those that have a fluctuating nature, such as wind power and solar power. In contrast, controllable renewable energy sources include dammed hydroelectricity, bioenergy, or geothermal power.
+
+Here are some of the easiest ways you can start to shrink your carbon footprint:
+1. Eat low on the food chain. This means eating mostly fruits, veggies, grains, and beans. Livestock—meat and dairy—is responsible for 14.5 percent of manmade global greenhouse gas emissions, mainly from feed production and processing and the methane (25 times more potent than CO2 at trapping heat in the atmosphere over 100 years) that beef and sheep belch out.
+Every day that you forgo meat and dairy, you can reduce your carbon footprint by 8 pounds—that’s 2,920 pounds a year. You can start by joining Meatless Mondays.
+2. Choose organic and local foods that are in season. Transporting food from far away, whether by truck, ship, rail or plane, uses fossil fuels for fuel and for cooling to keep foods in transit from spoiling.
+3. Buy foodstuffs in bulk when possible using your own reusable container.
+    </textarea>
+    </div> <!--This textarea shows information about renewable eenrgy that the user can look at if they would like to learn more about it and understand how thye can help out the ecosystem-->
+    
+    <div class="supportbutton"><a href="contact.html">support button(click this if u would like to ask us some questions privately)</a></div> <!--this is the support button that takes the user to the contact page to ask any questions-->
+    <div class="settings"><a href="settings.html"><h3>settings button</h3></a></div> <!--this is a link that takes the user to the settings page-->
+</body>
+</html>

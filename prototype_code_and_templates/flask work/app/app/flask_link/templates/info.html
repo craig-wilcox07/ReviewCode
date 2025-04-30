@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .hometitle { /*this class shows the position the title card on the screen*/
+            border: 2px solid black;
+            position: sticky;
+            top: auto;
+            font-size: larger;
+            text-align: center;
+            padding: 5px;
+            background-color: #e28410;
+        }
+
+        .settings { /*this is the class for a settings button which takes them to the settings page*/
+            position: fixed;
+            bottom: 0%;
+            right: 0%;
+            border: 2px solid black;
+            background-image: url("white background.jpg");
+        }
+
+        p { /*this class allows me to put the message at the top of the screen to show the user what to do on this page*/
+            border: 2px solid black;
+            position: fixed;
+            left: 3%;
+            bottom: 20%;
+            font-size: 2.2vh;
+            font-size: 2.2vw;
+            background-image: url("white background.jpg");
+        }
+
+        textarea { /*this class allows me to change the textarea*/
+            position: fixed;
+            left: 8%;
+            top:24%;
+            font-size: 1vh;
+            font-size: 1vw;
+        }
+        .supportbutton { /*this class shwos the support button to contact the team if the user needs help with anything*/
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            font-size: 1vh;
+            font-size: 1vw;
+            position: fixed;
+            bottom: 0%;
+            background-image: url("white background.jpg");
+        }
+        body { /*this is the class for a grey background that makes the page look more appealing*/
+            background-image: url("grey.jpg");
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="hometitle"><a href="Homepage.html"><h1>Rolsa Technologies</h1></a></div>
+    <h2>Got some questions for us? Then contact us and <a href="booking.html">schedule a meeting</a></h2> <!--shows a link for the contact page-->
+    <p>Want to see how you can see the result of your carbon footprint and also how to improve it? calculate it <a href="calculate.html">here</a></p> <!--shows a link for the calculation page-->
+
+    <div class="info">
+    <textarea rows="18" cols="150" width="75px" readonly>CO2 emissions of countries are typically measured on the basis of production. 
+This accounting method is sometimes referred to as territorial emissions. Countries use it when they report their emissions, and set domestic and international targets such as Nationally Determined Contributions.[6] Consumption-based emissions on the other hand are adjusted for trade. To calculate consumption-based emissions analysts have to track which goods are traded across the world. Whenever a product is imported, all CO2 emissions that were emitted in the production of that product are included. 
+Consumption-based emissions reflect the lifestyle choices of a country's citizens.
+According to the World Bank, the global average carbon footprint in 2014 was about 5 tonnes of CO2 per person, measured on a production basis.
+The EU average for 2007 was about 13.8 tonnes CO2e per person. For the USA, Luxembourg and Australia it was over 25 tonnes CO2e per person.
+In 2017, the average for the USA was about 20 metric tonnes CO2e per person. This is one of the highest per capita figures in the world.
+The footprints per capita of countries in Africa and India were well below average. 
+Per capita emissions in India are low for its huge population. But overall the country is the third largest emitter of CO2 and fifth largest economy by nominal GDP in the world.
+Assuming a global population of around 9–10 billion by 2050, a carbon footprint of about 2–2.5 tonnes CO2e per capita is needed to stay within a 2 °C target.
+These carbon footprint calculations are based on a consumption-based approach using a Multi-Regional Input-Output (MRIO) database.
+This database accounts for all greenhouse gas (GHG) emissions in the global supply chain and allocates them to the final consumer of the purchased commodities.</textarea>
+    </div> <!--shows information on emissions and also how you can help the planet in ways and how it is caused-->
+
+    <div class="settings"><a href="settings.html"><h3>settings button</h3></a></div>
+    <div class="supportbutton"><a href="contact.html">support button(click this if u would like to ask us some questions privately)</a></div>
+</body>
+</html>

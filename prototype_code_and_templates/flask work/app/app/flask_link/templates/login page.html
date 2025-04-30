@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .login-title {
+            position: fixed;
+            top: 1%;
+            left: 7%;
+            border: 3px solid black;
+            padding: 10px;
+            background-color: #e28410;
+        }
+        .backbutton {
+            position: fixed; /*this is a class for a backbutton which allows the user to go back tot he last page they came from*/
+        }
+        .login_details { /*this is the class for the login details of the user like their email and apssword that they will input to log into their account*/
+            border: 2px solid black;
+            position: absolute;
+            top: 15%;
+            left: 7%;
+            font-size: 2.3vh;
+            font-size: 2.3vw;
+            padding: 10px;
+            width: 70%;
+            background-image: url("white background.jpg");
+        }
+        .forgotPassword { /*this is the class for a link that takes the user to a page to reset their password should they forget it*/
+            border: 2px solid black;
+            padding: 4px;
+            position: fixed;
+            bottom: 44%;
+            left: 14%;
+            font-size: 1.5vh;
+            font-size: 1.5vw;
+            background-image: url("white background.jpg");
+        }
+        .loginButton { /*this is the class for a link of the login button which confirms the login by the user if the details are correctly inputted*/
+            position: fixed;
+            font-size: 2vh;
+            font-size: 2vw;
+        }
+        .createAccount { /*this is the class for a link that takes the user to a create account page so they can make an account if thye dont have one already*/
+            border: 2px solid black;
+            padding: 4px;
+            position: fixed;
+            right: 0%;
+            bottom: 8%;
+            font-size: 1.2vh;
+            font-size:1.2vw;
+            background-image: url("white background.jpg");
+        }
+        .settings { /*this is the class for a settings button which takes them to the settings page*/
+            position: fixed;
+            bottom: 0%;
+            right: 0%;
+            border: 2px solid black;
+            background-image: url("white background.jpg");
+        }
+        body { /*this is the class for a grey background that makes the page look more appealing*/
+            background-image: url("grey.jpg");
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-title"><h1>Log into your account</h1></div>
+    <div class="backbutton"><button onclick="history.back()">back button</button></div>
+    <div class="login_details">
+        <form action="/Login"> <!--this is the form which displays input areas for the user to input their details to login-->
+            <label for="email">Email:(put email below)</label><br />
+            <input type="text" id="Email" name="Email"><br><br><br><br>
+            <label for="password">Password:(put password below)</label><br>
+            <input type="text" id="password" name="Password"><br><br><br><br>
+            <button type="submit" style="font-size:1.5vh">Log-in</button> <!--this specifically displays a submit button which allows the suer to log in and be directed elsewhere-->
+        </form>
+    </div>
+    <div class="forgotPassword"><a href="forgotpassword.html">Forgot Password?</a></div>
+    <div class="createAccount"><p>Not got an account with us already?</p><a href="createaccount.html">create an account</a></div>
+    <div class="settings"><a href="settings.html"><h3>settings button</h3></a></div>
+</body>
+</html>

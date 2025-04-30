@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .hometitle { /*this class shows the position the title card on the screen*/
+            border: 2px solid black;
+            position: sticky;
+            top: auto;
+            font-size: larger;
+            text-align: center;
+            padding: 5px;
+            background-color: #e28410;
+        }
+        .settings { /*this is the class for a settings button which takes them to the settings page*/
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            border: 2px solid black;
+            background-image: url("white background.jpg");
+        }
+        form { /*this class shows controls the position and text size of the form for booking a type of installation and also the time and date of this*/
+            background-image: url("white background.jpg");
+            position:absolute;
+            left: 37.5%;
+            top: 35%;
+            padding:60px;
+            border: 3px solid black;
+            text-align:center;
+        }
+        h2 { /*this controls the font size of the title for the form of selecting a date and time*/
+            font-size: 3vh;
+            font-size: 3vw;
+        }
+        body { /*this is the class for a grey background that makes the page look more appealing*/
+            background-image: url("grey.jpg");
+            border: none;
+        }
+        .install_selection { /*this class controls the position and size of the area to select a type of installation within a list of the options*/
+            position: absolute;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 2vh;
+            font-size: 2vw;
+            left: 35%;
+            top: 20%;
+            background-image: url("white background.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div class="hometitle"><a href="Homepage.html"><h1>Rolsa Technologies</h1></a></div>
+    <div class="install_selection"> <!--this shows the options of installations the user has-->
+        <label for="installation">Choose an installation you would like:</label><br>
+        <select id="installation">
+            <option value="Solar panel">Solar panel</option>
+            <option value="Heat pump">Heat pumps</option>
+            <option value="Lighting">Solar Lighting</option>
+            <option value="Heating">Solar Heating</option>
+        </select>
+    </div>
+    <form action="/Booking_Page" method="POST"> <!--this shows the form of selecting a date and time and also the confirm button for the booking-->
+        <h2>Select a Date:</h2>
+        <input type="date" id="Date" name="Date" style="height:45px; width:90px">
+        <br />
+        <br />
+        <h2>Select a time:</h2>
+        <input type="time" id="Time" name="Time" style="height:45px; width:90px">
+        <br />
+        <br />
+        <button type="button" onclick="document.location='payment.html'"style="font-size:20px">Confirm booking</button>
+    </form>
+    <div class="settings"><a href="settings.html"><h3>settings button</h3></a></div> <!--this shows a link to take the user to the settings page-->
+</body>
+</html>

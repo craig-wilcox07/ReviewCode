@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .hometitle { /*this class shows the position the title card on the screen*/
+            border: 2px solid black;
+            position: sticky;
+            top: auto;
+            font-size: larger;
+            text-align: center;
+            padding: 5px;
+            background-color: #e28410;
+        }
+
+        .settings { /*this is the class for a settings button which takes them to the settings page*/
+            position: fixed;
+            bottom: 0%;
+            right: 0%;
+            border: 2px solid black;
+            background-image: url("white background.jpg");
+        }
+
+        p { /*this controls the position and font size of a message for the user to show what they need to do to contact us directly*/
+            border: 2px solid black;
+            font-size: 2vh;
+            font-size: 2vw;
+            position: fixed;
+            left:10%;
+            background-image: url("white background.jpg");
+        }
+
+        .send { /*this class controls the position and font size of the sne dmessage button which confirms the users message*/
+            border: 2px solid black;
+            padding: 4px;
+            position: fixed;
+            bottom: 20%;
+            left: 48%;
+            font-size: 2vh;
+            font-size: 2vw;
+            background-image: url("white background.jpg");
+        }
+
+        .note { /*this class controls the position of the message we output to the user to tell them about a response time and how they know it has been sent*/
+            position: fixed;
+            bottom: 42%;
+            left: 19%;
+        }
+
+        body { /*this is the class for a grey background that makes the page look more appealing*/
+            background-image: url("grey.jpg");
+            border: none;
+        }
+        .Contact_method { /*this class contorls the position and font size of the form of inputting an email and message for sending*/
+            border: 2px solid black;
+            padding: 20px;
+            position: absolute;
+            left: 20%;
+            top: 25%;
+            font-size: 2.2vh;
+            font-size: 2.2vw;
+        }
+        textarea { /*this controls the font size of the text area for the note of resopnse time*/
+            font-size: 1.5vh;
+            font-size: 1.5vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="hometitle"><a href="Homepage.html"><h1>Rolsa Technologies</h1></a></div>
+    <p>You need to contact us? No worries add your email and we will answer you whenver it is possible</p>
+    <div class="Contact_method"> <!--this shows the form of where the user will input their email and message to send off to us-->
+        <form action="/Contact_Page" method="POST">
+            <label for="Email">Email:(Put email below)</label><br>
+            <input type="text" id="Email" name="Email" size="25"><br><br>
+            <label for="Message">Message Box:(put your message below, it has a max characters of 300)</label><br>
+            <input type="text" id="Message" name="Message" maxlength="300" size="150"><br>
+        </form>
+    </div>
+    <div class="send"><a href="home page.html">Send message</a></div> <!-- this will allow the user to confirm a message-->
+    <div class="note"><textarea rows="2" cols="80" width="75px" readonly>Responses may take up to 2-3 business days, if you are brought back to the home page then your message has been sent, Thank you!</textarea></div> <!-- this will output a message
+                                                                                                                                                                                          to the user about how long it may take for us to respons to them
+                                                                                                                                                                                                                           -->
+    <div class="settings"><a href="settings.html"><h3>settings button</h3></a></div>
+</body>
+</html>

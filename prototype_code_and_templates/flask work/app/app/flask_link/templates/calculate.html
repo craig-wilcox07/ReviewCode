@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .hometitle { /*this class shows the position the title card on the screen*/
+            border: 2px solid black;
+            position: sticky;
+            top: auto;
+            font-size: larger;
+            text-align: center;
+            padding: 5px;
+            background-color: #e28410;
+        }
+
+        .settings { /*this is the class for a settings button which takes them to the settings page*/
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            border: 2px solid black;
+            background-image: url("white background.jpg");
+        }
+
+        .CFTitle { /*this class showsthe position and font size of the title for explaining what carbon footprints are*/
+            border: 2px solid black;
+            font-size: 2vw;
+            font-size: 1.5vh;
+            position: fixed;
+            right: 8.3%;
+            top: 10%;
+        }
+
+        .CFInfo { /*this class controls the information about carbon footprint*/
+            font-size: 2vw;
+            font-size: 2vh;
+            border: 2px solid black;
+            position: fixed;
+            right: 5%;
+            top: 17%;
+        }
+
+        .CAInfo { /*this class controls the information about carbon emission causes*/
+            font-size: 2vw;
+            font-size: 2vh;
+            position: fixed;
+            left: 10%;
+            top: 60%;
+        }
+
+        .CATitle { /*this class shows the title of this information*/
+            font-size: 2vw;
+            font-size: 2vh;
+            border: 2px solid black;
+            position: fixed;
+            left: 10%;
+            top: 52%;
+        }
+
+        .supportbutton { /*this class shwos the support button to contact the team if the user needs help with anything*/
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            font-size: 17px;
+            position: fixed;
+            bottom: 0;
+            background-image: url("white background.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div class="hometitle"><a href="Homepage.html"><h1>Rolsa Technologies</h1></a></div>
+    <iframe width="710" height="1300" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" src="https://calculator.carbonfootprint.com/calculator.aspx"></iframe> <!--this is an api which allows the suer to clauclate their carbon footprint-->
+
+    <div class="CFTitle"><h2>What is carbon footprint? and how is it measured?</h2></div>
+    <div class="CFInfo">
+    <textarea rows="20" cols="90" width="75px" readonly>
+Carbon footprints are measured in units of carbon dioxide, a known greenhouse gas.
+Everything, from the type of energy we use to heat our homes to our methods of travel, and even the websites we visit, can make that footprint larger or smaller. It all adds up to a discernable impact on the ecosystem.
+In addition to more obvious choices, like how much we use our cars, things like the food we eat can also contribute to our carbon footprint due to the practices used to grow and farm the produce and animal products we eat like beef, milk, and eggs.
+Even internet use can add to our carbon footprint. According to Mozilla and the Carbon Literacy project, the simple act of sending an email can release around 17 grams of carbon.
+That doesn’t seem like a lot—and it isn’t by itself—but the billions of emails that get sent every year add up. 
+Whether you calculate your carbon footprint online or manually, a “good” carbon footprint is considered to be 6,000 to 15,999, while 16,000-22,000 is considered average.
+Lower than 6,000 is excellent, while over 22,000 means you should start taking steps to bring that number down.
+    </textarea></div> <!--this gives some information about carbon footprint and how its measure so the user know how this api is getting their carbon footprint off this information-->
+
+    <div class="CATitle"><h3>what are the main causes of carbon emissions?</h3></div>
+    <div class="CAInfo">
+    <textarea rows="25" cols="100" width="75px" readonly>
+Fossil Fuels:
+Carbon emissions and other greenhouse gases are caused by the burning of fossil fuels in the environment. 
+In fact, any activity to fulfil a human need requires energy that emits carbon dioxide.
+The electricity we use is mostly made from fossil fuels (such as coal, natural gas and oil). The more electricity we use, there is more fuel consumption for electricity production, leading to further increase in carbon dioxide.
+Most of the things we use are made in factories by the use of non-renewable resources. These are sent to far-flung areas from the freight trains that again involve burning of fossil fuels.
+Modern Lifestyle:
+If we make a car account for each person on this planet, then the result will be more than seven billion cars – enough to create a catastrophe for mankind. 
+Emission of carbon dioxide frompetrol and diesel is estimated to be about 2.4 kg per litre. Apart from the pollution caused by the vehicles we run, there are many other reasons for the increase of carbon dioxide in the atmosphere. 
+Our home, equipped with latest power-driven equipment, is another major source of carbon dioxide, which adds up to our total carbon footprint.
+We live in an era where your image is evaluated on the basis of electronic equipment that you own, this assumption has increased the business of many equipment manufacturers around the world. 
+Every electronic item such as a processor of a mobile handset adds to carbon dioxide in the air.
+    </textarea></div> <!--this shows some information on how its caused so the user can possibly cut down on some things they might be doing but havent realised yet-->
+
+
+    <div class="settings"><a href="settings.html"><h3>settings button</h3></a></div>
+    <div class="supportbutton"><a href="contact.html">support button(click this if u would like to ask us some questions privately)</a></div>
+</body>
+</html>

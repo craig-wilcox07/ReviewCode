@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .hometitle { /*this class shows the position the title card on the screen*/
+            border: 2px solid black;
+            position: sticky;
+            top: auto;
+            font-size: larger;
+            text-align: center;
+            padding: 5px;
+            background-color: #e28410;
+        }
+
+        .addaccount { /*this class shows a links position and font size for adding another account*/
+            font-size: 30px;
+            border: 2px solid black;
+            padding: 5px;
+            position: absolute;
+            right: 0%;
+            bottom: 8%;
+            font-size: 1.2vh;
+            font-size: 1.2vw;
+            background-image: url("white background.jpg");
+        }
+
+        .details { /*this class controls the position and font size of any details the users account has*/
+            border: 2px solid black;
+            padding: 5px;
+            position: absolute;
+            right: 0;
+            top: 22%;
+            font-size: 1.5vh;
+            font-size: 1.5vw;
+            background-image: url("white background.jpg");
+        }
+        .personalinfo { /*this class controls the design of any personal information the user has on their account*/
+            border: 2px solid black;
+            padding: 5px;
+            position: absolute;
+            top: 18%;
+            left: 15%;
+            font-size: 2vh;
+            font-size: 2vw;
+            background-image: url("white background.jpg");
+        }
+        .manage { /*this class controls the design of the booking details of all of their booking and also if they would like to change them by going to the page for them*/
+            border: 2px solid black;
+            padding: 5px;
+            position: absolute;
+            top: 18%;
+            left: 50%;
+            font-size: 2vh;
+            font-size: 2vw;
+            background-image: url("white background.jpg");
+        }
+        body { /*this is the class for a grey background that makes the page look more appealing*/
+            background-image: url("grey.jpg");
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="hometitle"><a href="Homepage.html"><h1>Rolsa Technologies</h1></a></div>
+    <div class="personalinfo"> <!--this shows areas of information for the user to see their personal information-->
+        <h3>Personal information</h3>
+        <p>Name of account holder: </p><br>
+        <p>Email: </p><br>
+        <p>Password: </p><br>
+        <p>Date of birth: </p><br>
+    </div>
+    <div class="manage"> <!--this shows any booking details the users account has on any bookings-->
+        <h3>Manage booking details</h3>
+        <p>Bookings:</p>
+        <button type="button" onclick="document.location= 'booking.html'">Edit</button><button type="button" onclick="delete booking">Remove</button> <!--this shows a button which leads the user to booking page by clicking edit and deleting it by clicking remove-->
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </div>
+    <div class="details"> <!--this shows the details of the account by showing its information like name, email and amount of orders-->
+        <h3>Account Details</h3>
+        <p>Account name: </p><br>
+        <p>Email: </p><br>
+        <p>amount of orders: </p><br>
+    </div>
+    <div class="addaccount"><a href="login page.html">Add another account</a></div> <!--this shows a link where the user can add another account by going back to the login page-->
+
+</body>
+</html>

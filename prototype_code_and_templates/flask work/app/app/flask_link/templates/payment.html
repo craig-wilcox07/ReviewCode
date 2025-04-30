@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .hometitle { /*this class shows the position the title card on the screen*/
+            border: 2px solid black;
+            position: sticky;
+            top: auto;
+            font-size: larger;
+            text-align: center;
+            padding: 5px;
+            background-color: #e28410;
+        }
+
+        .settings { /*this is the class for a settings button which takes them to the settings page*/
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            border: 2px solid black;
+            background-image: url("white background.jpg");
+        }
+
+        .details { /*this class controls the position and font size of a form that allows the user to input an entirely new payment method or input an existing one*/
+            position: absolute;
+            left: 0%;
+            top: 9%;
+            font-size: 1.5vh;
+            font-size:1.5vw;
+        }
+
+        .message { /*this controls the position and font size of a message for the suer to say that a receipt will be sent once confirmed*/
+            position: absolute;
+            bottom: 3%;
+            font-size: 1.1vh;
+            font-size:1.1vw;
+        }
+
+        .fees { /*thisd class controlos the position and font size of the fees so they are overlapping with the other information on the page*/
+            position: absolute;
+            bottom: 6%;
+            font-size: 1.1vh;
+            font-size: 1.1vw;
+        }
+
+        .bookingdetails { /*this is a design for the booking details so the user can review them and also change them if needed*/
+            position: absolute;
+            bottom: 30%;
+            font-size: 1.1vh;
+            font-size: 1.1vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="hometitle"><a href="Homepage.html"><h1>Rolsa Technologies</h1></a></div>
+    <div class="settings"><a href="settings.html"><h3>settings button</h3></a></div>
+    <div class="details"> <!--this form shows the input areas for a payment method existing or non-existing-->
+        <form action="/payment_page" method="POST">
+            <label for="details">Details for payment method:</label><br><br>
+            <label for="cardnum">card number:</label><br>
+            <input type="text" id="cardnum" name="cardnum" value="" style="width:200px"><br><br>
+            <label for="Expiry date">Expiry date of card:</label><br>
+            <input type="text" id="expiry" name="expiry" value=""><br><br>
+            <label for="CVV">Enter your CVV:</label><br>
+            <input type="text" id="CVV" name="CVV" value=""><br><br>
+            <label for="nameofholder">Enter the name on the card:</label><br>
+            <input type="text" id="name" name="name" value="" style="width:200px"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <button type="button" onclick="document.location='bookconfirm.html'">confirm and pay for booking</button> <!--this confirms and pays for the booking so it is now on the database-->
+        </form>
+    </div>
+    <div class="bookingdetails"> <!--this will show the booking details so the user can review them before confirming and paying for their booking-->
+        <p>Your booking details:</p><br>
+        <p>product: </p><br>
+        <p>selected date: </p><br>
+        <p>selected time: </p><br>
+    </div>
+    <div class="fees"> <!--this shows fees added on for the user in terms of a dleivery fee or other things-->
+        <p>Added fees onto your balance:</p><br>
+        <p>processing fee: £3.49</p><br>
+        <p>delivery fee: £1.99</p><br>
+        <p>installation fee: £4.99</p><br>
+    </div>
+    <div class="message"><p>once confirmed for this booking a receipt will be sent to the email linked to your account</p></div> <!--this message is displayed so the user knows a receipt will be sent to them once they confirm this booking-->
+</body>
+</html>

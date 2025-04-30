@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .hometitle { /*this class shows the position the title card on the screen*/
+            border: 2px solid black;
+            position: sticky;
+            top: auto;
+            font-size: larger;
+            text-align: center;
+            padding: 5px;
+            background-color: #e28410;
+        }
+        .info_details { /*this class shows the form whihc shows input types for any details you will need to fill in to create an account*/
+            position: absolute;
+            left: 37.5%;
+            top: 20%;
+            padding:60px;
+            border: 2px solid black;
+            font-size: 1.5vh;
+            font-size: 1.5vw;
+            background-image: url("white background.jpg");
+        }
+        label { /*this class shows te design for the title of this page and how it is resized for better visuals*/
+            font-size: 2vh;
+            font-size:2vw;
+        }
+        .CreateAccountButton { /*this class shows a button to confirm the creation of an account if all details are filled in by the user*/
+            border: 2px solid black;
+            padding: 4px;
+            position: fixed;
+            bottom: 25.3%;
+            left: 44.5%;
+            font-size: 1.5vh;
+            font-size: 1.5vw;
+            background-image: url("white background.jpg");
+        }
+        body { /*this is the class for a grey background that makes the page look more appealing*/
+            background-image: url("grey.jpg");
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="hometitle"><a href="Homepage.html"><h1>Rolsa Technologies</h1></a></div> <!--this shows the title card and links it back to the home page-->
+    <div class="info_details">
+        <form action="/CreateAcc"> <!--this form displays the inputs for creating an account-->
+            <label for="Acc">Create your account:</label><br><br>
+            <h3>Name here:</h3>
+            <input type="text" id="Acc" name="Acc" maxlength="40"><br><br>
+            <h3>Email here:</h3>
+            <input type="text" id="Email" name="Email" maxlength="65"><br><br>
+            <h3>Password here:</h3>
+            <input type="text" id="Password" name="Password" maxlength="25"><br><br>
+        </form>
+    </div>
+    <div class="CreateAccountButton"><a href="login page.html">Create Account</a></div>
+</body>
+</html>
