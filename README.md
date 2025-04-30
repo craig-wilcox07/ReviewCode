@@ -6,7 +6,7 @@ minimize that tab once its open and come back to github, you then need to click 
 ![image](https://github.com/user-attachments/assets/a2315231-d44b-4300-a138-404cb9fd7457)
 Once you do that the file will come up in your downloads section in your files or you can click the file onc eits finihsed downloadingin the top right corner of your screen
 Once you do that itll bring up that file whihc has a file called prototype_code_and_templates and also a readme file, clcik on the top file, then again and again for app, then once it bring up 5 different files click on the one called app which is a folder, then the bottom folder, then the top folder, then you can click on the python file at the top which will open the code.
-![image](https://github.com/user-attachments/assets/d29acd94-eb79-4d33-9c39-50533c932c2b)
+![image](https://github.com/user-attachments/assets/9e060b9e-6f6a-4142-9bc7-21ae8be9d267)
 open that file in visual studio that you just downloaded and it should bring up the code.
 There are a few steps you need to complete before you can review my code, first of all you need to install a language called flask, you can do this by clicking on a yellow present button on the top bar
 ![image](https://github.com/user-attachments/assets/77a89e62-f1f9-4a78-b4d9-7bc952a5f463)
